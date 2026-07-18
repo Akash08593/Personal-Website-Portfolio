@@ -77,5 +77,5 @@ document.querySelectorAll('.glass-card').forEach(el => {
     el.style.opacity = 0;
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-    observer.observe(el);
+    observer.observe(el)
 });
