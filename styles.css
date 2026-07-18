@@ -3,15 +3,15 @@
 
 /* CSS Variables */
 :root {
-    --bg-primary: #0f0a1f;
-    --bg-card: #1a103c;
-    --accent: #a855f7;
-    --accent-secondary: #ec4899;
+     --bg-primary: #050816;
+    --bg-card: #0b1220;
+    --accent: #3b82f6;
+    --accent-secondary: #22d3ee;
     --success: #10b981;
     --text-main: #f8fafc;
-    --text-muted: #a1a1aa;
+    --text-muted: #94a3b8;
     --border: rgba(255, 255, 255, 0.08);
-    --glass-bg: rgba(26, 16, 60, 0.6);
+    --glass-bg: rgba(15, 23, 42, 0.6);
     --font-main: 'Inter', sans-serif;
     --font-heading: 'Outfit', sans-serif;
 }
