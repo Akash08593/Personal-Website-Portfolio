@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c18" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="aws-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="azure-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="gcp-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#b91c1c" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Filters for Glow Effects -->
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="960" height="480" rx="16" fill="url(#bg-grad)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+  <rect width="960" height="480" fill="url(#grid)" />
+
+  <!-- Ambient Glows -->
+  <circle cx="240" cy="200" r="140" fill="#3b82f6" opacity="0.08" filter="blur(50px)" />
+  <circle cx="500" cy="220" r="130" fill="#06b6d4" opacity="0.08" filter="blur(50px)" />
+  <circle cx="780" cy="240" r="150" fill="#8b5cf6" opacity="0.08" filter="blur(50px)" />
+
+  <!-- Header Banner -->
+  <g transform="translate(35, 30)">
+    <rect x="0" y="0" width="135" height="24" rx="12" fill="rgba(59, 130, 246, 0.15)" stroke="rgba(59, 130, 246, 0.3)" />
+    <text x="67" y="16" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="10" font-weight="600" text-anchor="middle">SYSTEM ARCHITECTURE</text>
+    <text x="150" y="17" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="16" font-weight="700">Multi-Cloud Resource Allocation Pipeline (LSTM + PSO)</text>
+  </g>
+
+  <!-- Pipeline Connecting Data Bus / Line -->
+  <path d="M 170 210 L 250 210 L 410 210 L 570 210 L 730 210" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2" stroke-dasharray="4 4" />
+  
+  <!-- Active Flow Beams -->
+  <line x1="170" y1="210" x2="250" y2="210" stroke="url(#blue-grad)" stroke-width="3" filter="url(#glow-cyan)" />
+  <line x1="390" y1="210" x2="430" y2="210" stroke="url(#blue-grad)" stroke-width="3" filter="url(#glow-cyan)" />
+  <line x1="570" y1="210" x2="610" y2="210" stroke="url(#blue-grad)" stroke-width="3" filter="url(#glow-cyan)" />
+
+  <!-- STAGE 1: Incoming Workload & Ingestion -->
+  <g transform="translate(35, 110)">
+    <rect width="140" height="200" rx="12" fill="url(#card-grad)" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" />
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="rgba(59,130,246,0.15)" />
+    <path d="M 24 30 L 36 30 M 30 24 L 30 36" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+    <text x="54" y="27" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="10">STAGE 01</text>
+    <text x="54" y="41" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="12" font-weight="700">Traffic Stream</text>
+    
+    <!-- Mini Workload Chart Mock -->
+    <rect x="14" y="60" width="112" height="60" rx="6" fill="#090e1a" stroke="rgba(255,255,255,0.05)" />
+    <path d="M 20 105 Q 35 70, 50 95 T 80 80 T 115 68" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path d="M 20 105 Q 35 70, 50 95 T 80 80 T 115 68 L 115 115 L 20 115 Z" fill="rgba(56,189,248,0.12)" />
+
+    <text x="14" y="145" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Dynamic Ingestion</text>
+    <text x="14" y="162" fill="#64748b" font-family="'Inter', sans-serif" font-size="9.5">RPS, Latency, Error%</text>
+    <text x="14" y="176" fill="#64748b" font-family="'Inter', sans-serif" font-size="9.5">Sliding 5-Window History</text>
+  </g>
+
+  <!-- STAGE 2: LSTM Workload Forecasting -->
+  <g transform="translate(215, 95)">
+    <rect width="180" height="230" rx="14" fill="url(#card-grad)" stroke="rgba(59,130,246,0.4)" stroke-width="1.5" filter="url(#glow-blue)" />
+    <rect x="16" y="16" width="34" height="34" rx="8" fill="rgba(59,130,246,0.2)" />
+    <circle cx="33" cy="33" r="8" fill="none" stroke="#60a5fa" stroke-width="2" />
+    <circle cx="33" cy="33" r="3" fill="#60a5fa" />
+    <text x="60" y="29" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="10">STAGE 02 &bull; DEEP LEARNING</text>
+    <text x="60" y="44" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">LSTM Demand Model</text>
+
+    <!-- Neural Architecture Visual -->
+    <rect x="16" y="66" width="148" height="75" rx="8" fill="#090e1a" stroke="rgba(255,255,255,0.06)" />
+    
+    <!-- Hidden Layers visualization -->
+    <g transform="translate(28, 80)">
+      <circle cx="0" cy="10" r="4" fill="#38bdf8" />
+      <circle cx="0" cy="24" r="4" fill="#38bdf8" />
+      <circle cx="0" cy="38" r="4" fill="#38bdf8" />
+      
+      <line x1="4" y1="10" x2="36" y2="17" stroke="rgba(56,189,248,0.4)" />
+      <line x1="4" y1="24" x2="36" y2="17" stroke="rgba(56,189,248,0.4)" />
+      <line x1="4" y1="24" x2="36" y2="31" stroke="rgba(56,189,248,0.4)" />
+      <line x1="4" y1="38" x2="36" y2="31" stroke="rgba(56,189,248,0.4)" />
+
+      <circle cx="40" cy="17" r="5" fill="#818cf8" />
+      <circle cx="40" cy="31" r="5" fill="#818cf8" />
+
+      <line x1="45" y1="17" x2="76" y2="24" stroke="rgba(129,140,248,0.4)" />
+      <line x1="45" y1="31" x2="76" y2="24" stroke="rgba(129,140,248,0.4)" />
+
+      <circle cx="80" cy="24" r="5" fill="#34d399" />
+      
+      <text x="100" y="27" fill="#34d399" font-family="'Fira Code', monospace" font-size="9" font-weight="600">Y_pred</text>
+    </g>
+
+    <text x="16" y="162" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Sequential Forecasting</text>
+    <text x="16" y="178" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; 2x Stacked LSTM (64/32 units)</text>
+    <text x="16" y="193" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Dropout &amp; Dense Head</text>
+    <text x="16" y="208" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Future Workload Targets</text>
+  </g>
+
+  <!-- STAGE 3: Particle Swarm Optimization (PSO) -->
+  <g transform="translate(435, 95)">
+    <rect width="180" height="230" rx="14" fill="url(#card-grad)" stroke="rgba(6,182,212,0.4)" stroke-width="1.5" filter="url(#glow-cyan)" />
+    <rect x="16" y="16" width="34" height="34" rx="8" fill="rgba(6,182,212,0.2)" />
+    <path d="M 26 28 L 34 38 L 40 26" stroke="#22d3ee" stroke-width="2" fill="none" stroke-linecap="round" />
+    <text x="60" y="29" fill="#22d3ee" font-family="'Fira Code', monospace" font-size="10">STAGE 03 &bull; HEURISTIC</text>
+    <text x="60" y="44" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">PSO Optimization</text>
+
+    <!-- Swarm Simulation Visual -->
+    <rect x="16" y="66" width="148" height="75" rx="8" fill="#090e1a" stroke="rgba(255,255,255,0.06)" />
+    
+    <g transform="translate(20, 72)">
+      <!-- Target global best star -->
+      <circle cx="100" cy="30" r="6" fill="#f59e0b" opacity="0.3" />
+      <circle cx="100" cy="30" r="3" fill="#fbbf24" />
+      <text x="92" y="48" fill="#fbbf24" font-family="'Fira Code', monospace" font-size="7.5">G_best</text>
+
+      <!-- Particle swarm dots moving toward G_best -->
+      <circle cx="20" cy="15" r="2.5" fill="#22d3ee" />
+      <path d="M 23 16 Q 60 10, 96 28" fill="none" stroke="rgba(34,211,238,0.3)" stroke-dasharray="2 2" />
+
+      <circle cx="30" cy="50" r="2.5" fill="#22d3ee" />
+      <path d="M 33 48 Q 65 52, 96 32" fill="none" stroke="rgba(34,211,238,0.3)" stroke-dasharray="2 2" />
+
+      <circle cx="15" cy="35" r="2.5" fill="#22d3ee" />
+      <path d="M 18 35 L 94 30" fill="none" stroke="rgba(34,211,238,0.3)" stroke-dasharray="2 2" />
+    </g>
+
+    <text x="16" y="162" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Fitness Function Convergence</text>
+    <text x="16" y="178" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Multi-Objective Split Evaluator</text>
+    <text x="16" y="193" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Latency vs. Cloud Cost Penalty</text>
+    <text x="16" y="208" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Dynamic Simplex Normalization</text>
+  </g>
+
+  <!-- STAGE 4: Multi-Cloud Execution (AWS + Azure + GCP) -->
+  <g transform="translate(655, 95)">
+    <rect width="270" height="230" rx="14" fill="url(#card-grad)" stroke="rgba(255,255,255,0.1)" stroke-width="1.2" />
+    
+    <text x="16" y="28" fill="#a78bfa" font-family="'Fira Code', monospace" font-size="10">STAGE 04 &bull; MULTI-CLOUD</text>
+    <text x="16" y="44" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">Dynamic Cloud Allocation Split</text>
+
+    <!-- Cloud Mini Cards -->
+    <!-- AWS -->
+    <g transform="translate(16, 56)">
+      <rect width="238" height="46" rx="8" fill="url(#aws-grad)" stroke="rgba(245, 158, 11, 0.3)" stroke-width="1" />
+      <text x="12" y="20" fill="#f59e0b" font-family="'Outfit', sans-serif" font-size="11" font-weight="700">AWS Cloud Cluster</text>
+      <text x="12" y="34" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">Dynamic Target Share</text>
+      <rect x="150" y="14" width="76" height="18" rx="4" fill="rgba(245, 158, 11, 0.2)" />
+      <text x="188" y="27" fill="#fbbf24" font-family="'Fira Code', monospace" font-size="10" font-weight="700" text-anchor="middle">42.5% Split</text>
+    </g>
+
+    <!-- Azure -->
+    <g transform="translate(16, 110)">
+      <rect width="238" height="46" rx="8" fill="url(#azure-grad)" stroke="rgba(2, 132, 199, 0.3)" stroke-width="1" />
+      <text x="12" y="20" fill="#38bdf8" font-family="'Outfit', sans-serif" font-size="11" font-weight="700">Microsoft Azure</text>
+      <text x="12" y="34" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">Low Latency Microservices</text>
+      <rect x="150" y="14" width="76" height="18" rx="4" fill="rgba(2, 132, 199, 0.2)" />
+      <text x="188" y="27" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="10" font-weight="700" text-anchor="middle">35.0% Split</text>
+    </g>
+
+    <!-- GCP -->
+    <g transform="translate(16, 164)">
+      <rect width="238" height="46" rx="8" fill="url(#gcp-grad)" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" />
+      <text x="12" y="20" fill="#f87171" font-family="'Outfit', sans-serif" font-size="11" font-weight="700">Google Cloud (GCP)</text>
+      <text x="12" y="34" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">Compute-Optimized Nodes</text>
+      <rect x="150" y="14" width="76" height="18" rx="4" fill="rgba(239, 68, 68, 0.2)" />
+      <text x="188" y="27" fill="#f87171" font-family="'Fira Code', monospace" font-size="10" font-weight="700" text-anchor="middle">22.5% Split</text>
+    </g>
+  </g>
+
+  <!-- Bottom Analytics Bar -->
+  <g transform="translate(35, 360)">
+    <rect width="890" height="85" rx="12" fill="#090e1a" stroke="rgba(255,255,255,0.06)" />
+    
+    <g transform="translate(24, 20)">
+      <text x="0" y="15" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="12" font-weight="700">Real-Time Visualization &amp; Metrics Dashboard (React + Vite)</text>
+      <text x="0" y="36" fill="#64748b" font-family="'Inter', sans-serif" font-size="10.5">Continuous multi-cloud synchronization with FastAPI telemetry and real-time swarm convergence telemetry.</text>
+    </g>
+
+    <g transform="translate(620, 20)">
+      <rect x="0" y="4" width="115" height="38" rx="6" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.25)" />
+      <text x="57" y="20" fill="#34d399" font-family="'Fira Code', monospace" font-size="9" text-anchor="middle">STATUS</text>
+      <text x="57" y="34" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">OPTIMAL</text>
+
+      <rect x="125" y="4" width="120" height="38" rx="6" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.25)" />
+      <text x="185" y="20" fill="#60a5fa" font-family="'Fira Code', monospace" font-size="9" text-anchor="middle">CONVERGENCE</text>
+      <text x="185" y="34" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">STABLE</text>
+    </g>
+  </g>
+</svg>

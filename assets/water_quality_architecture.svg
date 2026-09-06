@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="wq-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050d1a" />
+      <stop offset="100%" stop-color="#091829" />
+    </linearGradient>
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="wq-card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#132238" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0c1726" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Risk Level Gradients -->
+    <linearGradient id="risk-low" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="risk-med" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="risk-high" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#dc2626" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Grid -->
+    <pattern id="wq-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="960" height="480" rx="16" fill="url(#wq-bg-grad)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+  <rect width="960" height="480" fill="url(#wq-grid)" />
+
+  <!-- Ambient Glows -->
+  <circle cx="200" cy="200" r="140" fill="#06b6d4" opacity="0.09" filter="blur(50px)" />
+  <circle cx="500" cy="220" r="140" fill="#10b981" opacity="0.09" filter="blur(50px)" />
+  <circle cx="800" cy="240" r="140" fill="#f59e0b" opacity="0.08" filter="blur(50px)" />
+
+  <!-- Header Banner -->
+  <g transform="translate(35, 30)">
+    <rect x="0" y="0" width="135" height="24" rx="12" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.3)" />
+    <text x="67" y="16" fill="#34d399" font-family="'Fira Code', monospace" font-size="10" font-weight="600" text-anchor="middle">IOT &amp; AI SYSTEM</text>
+    <text x="150" y="17" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="16" font-weight="700">Water Quality Telemetry &amp; Early Warning System Pipeline</text>
+  </g>
+
+  <!-- Flow Data Lines -->
+  <path d="M 180 200 L 260 200 L 460 200 L 680 200" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="170" y1="200" x2="260" y2="200" stroke="url(#cyan-grad)" stroke-width="3" filter="url(#glow-emerald)" />
+  <line x1="430" y1="200" x2="500" y2="200" stroke="url(#cyan-grad)" stroke-width="3" filter="url(#glow-emerald)" />
+  <line x1="680" y1="200" x2="740" y2="200" stroke="url(#cyan-grad)" stroke-width="3" filter="url(#glow-emerald)" />
+
+  <!-- SECTION 1: Multi-Sensor Ingestion Array -->
+  <g transform="translate(35, 95)">
+    <rect width="195" height="245" rx="14" fill="url(#wq-card-grad)" stroke="rgba(6, 182, 212, 0.3)" stroke-width="1.2" />
+    <text x="16" y="28" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="10">STEP 01 &bull; SENSOR ARRAY</text>
+    <text x="16" y="44" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">Telemetry Ingestion</text>
+
+    <!-- Mini Sensor Pills -->
+    <g transform="translate(14, 60)">
+      <!-- pH -->
+      <rect width="167" height="36" rx="6" fill="#09121f" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="20" cy="18" r="5" fill="#38bdf8" />
+      <text x="35" y="17" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="10.5" font-weight="600">pH Level Sensor</text>
+      <text x="35" y="28" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5">Acidity / Alkalinity</text>
+
+      <!-- Turbidity -->
+      <rect y="44" width="167" height="36" rx="6" fill="#09121f" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="20" cy="62" r="5" fill="#2dd4bf" />
+      <text x="35" y="61" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="10.5" font-weight="600">Turbidity Probe</text>
+      <text x="35" y="72" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5">Water Clarity &amp; Solids</text>
+
+      <!-- TDS -->
+      <rect y="88" width="167" height="36" rx="6" fill="#09121f" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="20" cy="106" r="5" fill="#34d399" />
+      <text x="35" y="105" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="10.5" font-weight="600">TDS / Temp Sensor</text>
+      <text x="35" y="116" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5">Dissolved Mineral Count</text>
+    </g>
+
+    <text x="16" y="210" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Real-time Sampling Rate</text>
+    <text x="16" y="226" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Analog / Digital ADC Ingestion</text>
+  </g>
+
+  <!-- SECTION 2: Microcontroller / Edge Gateway -->
+  <g transform="translate(260, 95)">
+    <rect width="200" height="245" rx="14" fill="url(#wq-card-grad)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1.2" />
+    <text x="16" y="28" fill="#34d399" font-family="'Fira Code', monospace" font-size="10">STEP 02 &bull; EDGE PROCESSING</text>
+    <text x="16" y="44" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">ESP8266 / ESP32 MCU</text>
+
+    <!-- Microcontroller Chip Mock -->
+    <rect x="18" y="62" width="164" height="85" rx="8" fill="#08101a" stroke="rgba(16,185,129,0.3)" />
+    
+    <g transform="translate(30, 75)">
+      <!-- Pins -->
+      <rect x="0" y="0" width="138" height="58" rx="6" fill="#0f2137" stroke="rgba(255,255,255,0.08)" />
+      <text x="69" y="26" fill="#2dd4bf" font-family="'Fira Code', monospace" font-size="11" font-weight="700" text-anchor="middle">ESP32 Core</text>
+      <text x="69" y="42" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">Edge Calibration &amp; Noise Filter</text>
+    </g>
+
+    <text x="18" y="170" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Local Validation &amp; Transport</text>
+    <text x="18" y="188" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Calibration Normalization</text>
+    <text x="18" y="204" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Wi-Fi Telemetry Stream</text>
+    <text x="18" y="220" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; GSM Backup Transmission</text>
+  </g>
+
+  <!-- SECTION 3: Predictive AI & Disease Risk Classifier -->
+  <g transform="translate(490, 80)">
+    <rect width="215" height="265" rx="14" fill="url(#wq-card-grad)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5" filter="url(#glow-emerald)" />
+    <text x="16" y="28" fill="#fbbf24" font-family="'Fira Code', monospace" font-size="10">STEP 03 &bull; PREDICTIVE ANALYTICS</text>
+    <text x="16" y="44" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">Contamination Risk Model</text>
+
+    <!-- Risk Level Cards -->
+    <g transform="translate(16, 60)">
+      <!-- Low Risk -->
+      <rect width="183" height="38" rx="6" fill="url(#risk-low)" stroke="rgba(16, 185, 129, 0.3)" />
+      <circle cx="16" cy="19" r="4" fill="#34d399" />
+      <text x="30" y="18" fill="#34d399" font-family="'Outfit', sans-serif" font-size="11" font-weight="700">Low Risk Level</text>
+      <text x="30" y="29" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="8.5">Potable, Parameters Balanced</text>
+
+      <!-- Medium Risk -->
+      <rect y="46" width="183" height="38" rx="6" fill="url(#risk-med)" stroke="rgba(245, 158, 11, 0.3)" />
+      <circle cx="16" cy="65" r="4" fill="#fbbf24" />
+      <text x="30" y="64" fill="#fbbf24" font-family="'Outfit', sans-serif" font-size="11" font-weight="700">Medium Risk Level</text>
+      <text x="30" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="8.5">Contamination Drift Detected</text>
+
+      <!-- High Risk -->
+      <rect y="92" width="183" height="38" rx="6" fill="url(#risk-high)" stroke="rgba(239, 68, 68, 0.3)" />
+      <circle cx="16" cy="111" r="4" fill="#f87171" />
+      <text x="30" y="110" fill="#f87171" font-family="'Outfit', sans-serif" font-size="11" font-weight="700">High Risk (Outbreak Risk)</text>
+      <text x="30" y="121" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="8.5">Critical Outbreak Hazard</text>
+    </g>
+
+    <text x="16" y="218" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Early Warning Analytics</text>
+    <text x="16" y="234" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Multi-parameter Trend Detection</text>
+    <text x="16" y="249" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Outbreak Prevention Strategy</text>
+  </g>
+
+  <!-- SECTION 4: Automated Alert & Public Health Action -->
+  <g transform="translate(735, 95)">
+    <rect width="190" height="245" rx="14" fill="url(#wq-card-grad)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.2" />
+    <text x="16" y="28" fill="#a78bfa" font-family="'Fira Code', monospace" font-size="10">STEP 04 &bull; RESPONSE</text>
+    <text x="16" y="44" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">Automated Alert Dispatch</text>
+
+    <!-- Mini Alert Boxes -->
+    <g transform="translate(14, 60)">
+      <rect width="162" height="46" rx="6" fill="#08101a" stroke="rgba(59,130,246,0.25)" />
+      <text x="10" y="19" fill="#60a5fa" font-family="'Inter', sans-serif" font-size="10" font-weight="700">GSM SMS Alert</text>
+      <text x="10" y="33" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5">Urgent SMS to Village Officials</text>
+
+      <rect y="54" width="162" height="46" rx="6" fill="#08101a" stroke="rgba(16,185,129,0.25)" />
+      <text x="10" y="73" fill="#34d399" font-family="'Inter', sans-serif" font-size="10" font-weight="700">Wi-Fi Dashboard Feed</text>
+      <text x="10" y="87" fill="#64748b" font-family="'Inter', sans-serif" font-size="8.5">Real-Time Cloud Telemetry</text>
+    </g>
+
+    <text x="16" y="180" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Proactive Water Safety</text>
+    <text x="16" y="198" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Instant Outbreak Prevention</text>
+    <text x="16" y="214" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">&bull; Community Health Safeguards</text>
+  </g>
+
+  <!-- Bottom Bar -->
+  <g transform="translate(35, 360)">
+    <rect width="890" height="85" rx="12" fill="#07101c" stroke="rgba(255,255,255,0.06)" />
+    
+    <g transform="translate(24, 22)">
+      <text x="0" y="15" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="12" font-weight="700">End-to-End Rural Water Safety Management</text>
+      <text x="0" y="34" fill="#64748b" font-family="'Inter', sans-serif" font-size="10.5">Continuous automated telemetry replacing manual reactive testing with predictive disease outbreak prevention.</text>
+    </g>
+
+    <g transform="translate(680, 20)">
+      <rect x="0" y="4" width="180" height="38" rx="6" fill="rgba(6,182,212,0.12)" stroke="rgba(6,182,212,0.3)" />
+      <text x="90" y="20" fill="#22d3ee" font-family="'Fira Code', monospace" font-size="9" text-anchor="middle">DETECTION MODE</text>
+      <text x="90" y="34" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">CONTINUOUS TELEMETRY</text>
+    </g>
+  </g>
+</svg>
