@@ -79,24 +79,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Reveal on scroll using IntersectionObserver
+    // Reveal on scroll enhancement without empty space gaps
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('in-view');
                 observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.08,
-        rootMargin: '0px 0px -40px 0px'
+        threshold: 0.05,
+        rootMargin: '50px'
     });
 
-    document.querySelectorAll('.glass-card, .highlight-item, .feature-item-pill, .flow-step').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+    document.querySelectorAll('.glass-card, .highlight-item, .flow-step').forEach(el => {
         revealObserver.observe(el);
     });
 

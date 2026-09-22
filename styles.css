@@ -152,7 +152,7 @@ img {
 }
 
 .section-padding {
-    padding: 6.5rem 0;
+    padding: 2.5rem 0;
     position: relative;
 }
 
@@ -165,7 +165,7 @@ img {
 /* Section Header */
 .section-header {
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .section-subtitle {
@@ -176,27 +176,27 @@ img {
     text-transform: uppercase;
     letter-spacing: 2px;
     display: inline-block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
 }
 
 .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
+    font-size: 2.35rem;
+    margin-bottom: 0.5rem;
     letter-spacing: -0.5px;
 }
 
 .section-desc {
     max-width: 650px;
     margin: 0 auto;
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: var(--text-muted);
 }
 
 .section-divider {
-    width: 60px;
+    width: 50px;
     height: 3px;
     background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
-    margin: 1rem auto 0;
+    margin: 0.6rem auto 0;
     border-radius: 3px;
 }
 
@@ -434,10 +434,10 @@ img {
    HERO SECTION
    ========================================================================== */
 .hero-section {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
-    padding: 7.5rem 0 4rem;
+    padding: 6.5rem 0 2.5rem;
     position: relative;
 }
 
@@ -445,7 +445,7 @@ img {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
     align-items: center;
-    gap: 3.5rem;
+    gap: 3rem;
 }
 
 .status-pill {
@@ -454,12 +454,12 @@ img {
     gap: 0.6rem;
     background: rgba(16, 185, 129, 0.1);
     border: 1px solid rgba(16, 185, 129, 0.25);
-    padding: 0.4rem 1rem;
+    padding: 0.35rem 0.9rem;
     border-radius: 2rem;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: var(--accent-emerald);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
 }
 
 .status-dot {
@@ -477,12 +477,12 @@ img {
 }
 
 .hero-title {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .hero-name {
     display: block;
-    font-size: 3.8rem;
+    font-size: 3.6rem;
     font-weight: 800;
     letter-spacing: -1.5px;
     line-height: 1.05;
@@ -491,25 +491,25 @@ img {
 
 .hero-role {
     display: block;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 700;
     letter-spacing: -0.5px;
 }
 
 .hero-description {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: var(--text-secondary);
     max-width: 540px;
-    margin-bottom: 2.2rem;
-    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    line-height: 1.65;
 }
 
 .hero-cta-group {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 2.2rem;
+    gap: 0.85rem;
+    margin-bottom: 1.5rem;
 }
 
 .hero-socials {
@@ -683,7 +683,7 @@ img {
    HIGHLIGHT BAR
    ========================================================================== */
 .highlight-bar {
-    padding: 2.2rem 0;
+    padding: 1.1rem 0;
     background: rgba(11, 17, 32, 0.7);
     border-top: 1px solid var(--border-subtle);
     border-bottom: 1px solid var(--border-subtle);
@@ -692,37 +692,37 @@ img {
 .highlight-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .highlight-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.85rem;
 }
 
 .highlight-icon {
-    width: 46px;
-    height: 46px;
-    border-radius: 0.75rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 0.65rem;
     background: var(--accent-blue-light);
     border: 1px solid rgba(59, 130, 246, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.45rem;
+    font-size: 1.35rem;
     color: var(--accent-cyan);
     flex-shrink: 0;
 }
 
 .highlight-text h4 {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 700;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.1rem;
 }
 
 .highlight-text p {
-    font-size: 0.83rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
 }
 
@@ -732,12 +732,12 @@ img {
 .about-grid {
     display: grid;
     grid-template-columns: 1.25fr 0.95fr;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: stretch;
 }
 
 .about-card {
-    padding: 2.25rem;
+    padding: 1.65rem 1.75rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -746,30 +746,30 @@ img {
 .about-icon-header {
     display: flex;
     align-items: center;
-    gap: 0.85rem;
-    margin-bottom: 1.25rem;
+    gap: 0.75rem;
+    margin-bottom: 0.85rem;
 }
 
 .about-icon-header i {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--accent-blue);
 }
 
 .about-icon-header h3 {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
 }
 
 .about-lead {
-    font-size: 1.08rem;
-    line-height: 1.8;
+    font-size: 1.02rem;
+    line-height: 1.65;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.15rem;
 }
 
 .about-tags-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6rem;
+    gap: 0.5rem;
 }
 
 .pill-tag {
@@ -778,9 +778,9 @@ img {
     gap: 0.35rem;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid var(--border-subtle);
-    padding: 0.4rem 0.85rem;
+    padding: 0.35rem 0.75rem;
     border-radius: 2rem;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-secondary);
     transition: var(--transition-fast);
@@ -799,39 +799,39 @@ img {
 .about-cards-column {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 0.75rem;
 }
 
 .mini-feature-card {
-    padding: 1.4rem 1.6rem;
+    padding: 1rem 1.25rem;
     display: flex;
     align-items: flex-start;
-    gap: 1.1rem;
+    gap: 0.9rem;
 }
 
 .mini-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 0.65rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 0.55rem;
     background: var(--accent-cyan-light);
     border: 1px solid rgba(6, 182, 212, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     color: var(--accent-cyan);
     flex-shrink: 0;
-    margin-top: 0.15rem;
+    margin-top: 0.1rem;
 }
 
 .mini-feature-card h4 {
-    font-size: 1.05rem;
-    margin-bottom: 0.35rem;
+    font-size: 0.98rem;
+    margin-bottom: 0.2rem;
 }
 
 .mini-feature-card p {
-    font-size: 0.88rem;
-    line-height: 1.6;
+    font-size: 0.84rem;
+    line-height: 1.5;
     color: var(--text-muted);
 }
 
@@ -841,11 +841,11 @@ img {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.75rem;
+    gap: 1.15rem;
 }
 
 .skill-category-card {
-    padding: 1.8rem;
+    padding: 1.35rem;
     display: flex;
     flex-direction: column;
 }
@@ -853,9 +853,9 @@ img {
 .category-header {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
+    gap: 0.85rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -930,11 +930,11 @@ img {
 .projects-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 .featured-project-card {
-    padding: 2.75rem;
+    padding: 1.85rem;
     border-radius: 1.25rem;
     border: 1px solid rgba(59, 130, 246, 0.25);
     background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, rgba(11, 17, 32, 0.9) 100%);
@@ -1857,55 +1857,55 @@ img {
 .resume-paper {
     background: #ffffff;
     color: #1e293b;
-    padding: 2.5rem;
+    padding: 1.75rem 2rem;
     border-radius: 0.75rem;
     font-family: 'Inter', sans-serif;
-    line-height: 1.5;
+    line-height: 1.45;
 }
 
 .resume-paper h2 {
     color: #0f172a;
-    font-size: 1.8rem;
-    margin-bottom: 0.15rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.1rem;
 }
 
 .resume-paper .rp-role {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #2563eb;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.25rem;
 }
 
 .resume-paper .rp-contact {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: #475569;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
     border-bottom: 2px solid #e2e8f0;
 }
 
 .rp-section {
-    margin-bottom: 1.35rem;
+    margin-bottom: 0.95rem;
 }
 
 .rp-section h3 {
-    font-size: 1.05rem;
+    font-size: 0.98rem;
     color: #0f172a;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     border-bottom: 1px solid #cbd5e1;
-    padding-bottom: 0.25rem;
-    margin-bottom: 0.6rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.45rem;
 }
 
 .rp-section p {
     color: #334155;
-    font-size: 0.9rem;
-    margin-bottom: 0.4rem;
+    font-size: 0.88rem;
+    margin-bottom: 0.3rem;
 }
 
 .rp-item {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.55rem;
 }
 
 .rp-item-head strong {
