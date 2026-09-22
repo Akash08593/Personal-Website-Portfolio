@@ -188,9 +188,9 @@ function handleContactSubmit(event) {
 
 const projectDetails = {
     cloud: {
-        title: "Cloud Optimization — Multi-Cloud Resource Allocation System",
-        category: "Major Technical Showcase &bull; AI + Cloud Distributed Systems",
-        description: "Built a multi-cloud resource allocation system using LSTM and Particle Swarm Optimization (PSO) to forecast demand and optimize resource distribution across AWS, Azure, and GCP.",
+        title: "High Traffic Cloud Optimization using LSTM and PSO",
+        category: "AI-Driven Cloud Optimization &bull; 06/2026 - 09/2026",
+        description: "Developed an AI-driven cloud optimization system for monitoring and managing high-volume application traffic in real time. Implemented LSTM-based traffic prediction to forecast workloads and identify potential traffic spikes, along with a PSO-based resource optimization approach for efficient allocation across multiple cloud environments. Integrated traffic monitoring, workload prediction, and resource optimization to improve cloud performance and resource utilization.",
         sections: [
             {
                 heading: "Problem Formulation",
@@ -210,31 +210,6 @@ const projectDetails = {
             }
         ],
         techStack: ["Python", "LSTM / Deep Learning", "Particle Swarm Optimization", "AWS", "Microsoft Azure", "Google Cloud (GCP)", "React + Vite", "FastAPI", "Docker"],
-        githubUrl: "https://github.com/Akash08593"
-    },
-    water: {
-        title: "Smart Water Quality Assessment and Early Warning System for Rural Areas",
-        category: "Applied IoT &bull; Machine Learning &bull; Public Health Engineering",
-        description: "An AI-powered IoT system that monitors water quality in real time and uses predictive analytics to detect early contamination trends, classifying disease outbreak risks and triggering automated alerts.",
-        sections: [
-            {
-                heading: "Rural Context & Problem Statement",
-                content: "Rural water networks suffer from intermittent testing, leaving communities vulnerable to sudden industrial contamination or seasonal waterborne pathogen spikes. Interventions were historically reactive, occurring only after health crises surfaced."
-            },
-            {
-                heading: "Multi-Sensor Telemetry Array",
-                content: "Utilizes ESP8266 and ESP32 microcontrollers connected to dedicated sensor probes measuring essential physical and chemical indicators (pH levels, turbidity, dissolved solids, and temperature) in real time."
-            },
-            {
-                heading: "Predictive Trend Analysis & Risk Categorization",
-                content: "Continuous telemetry data is evaluated through predictive algorithms that detect early negative drift in water safety metrics before critical thresholds are breached, classifying disease outbreak risk into distinct Low, Medium, and High threat tiers."
-            },
-            {
-                heading: "Automated Early Warning Dispatch",
-                content: "When abnormal degradation or high-risk thresholds are detected, the system autonomously broadcasts urgent SMS/data alerts over GSM and Wi-Fi networks to local health authorities and community managers."
-            }
-        ],
-        techStack: ["ESP8266 / ESP32", "IoT Sensor Array", "Predictive Analytics", "GSM Module", "Wi-Fi Telemetry", "Python"],
         githubUrl: "https://github.com/Akash08593"
     }
 };
